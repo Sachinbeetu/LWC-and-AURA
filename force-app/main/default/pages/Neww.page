@@ -1,0 +1,17 @@
+<apex:page StandardController="Account">
+    <apex:form >
+        <apex:pageBlock title="Section 1">
+            <apex:pageBlockSection >
+                <apex:commandButton action="{!Save}" value="SAVE"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Section 2" columns="3">
+                <apex:inputField value="{!Account.name}"/>
+                <apex:inputField value="{!Account.phone}"></apex:inputField>
+                <apex:inputField value="{!Account.fax}"/>
+                <apex:inputField value="{!Account.accountNumber}"/>
+                <apex:inputField value="{!Account.industry}"/>
+                <apex:inputField value="{!Account.website}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
