@@ -1,11 +1,11 @@
 <template>
     <lightning-card variant="Narrow" title="Welcome" icon-name="standard:user">
-    <span style="font-size:20px">Hello,{greetings}!!!!</span>
-    <lightning-input label="Enter Your Name" name="greet"  onchange={handleInputChange}></lightning-input>
+        <span style="font-size:20px">Hello,{greetings}!!!!</span>
+        <lightning-input label="Enter Your Name" name="greet" onchange={handleInputChange}></lightning-input>
     </lightning-card>
     <lightning-card variant="Narrow" title="Record ID and Object Name" icon-name="standard:account">
         <div class="slds-m-around_small">
-            <p>Record Id : {newdata}</p>
+            <p>Save And Reset Count : {newdata}</p>
             <p>Object API Name : {objectApiName}</p>
             <p>Name : {name}</p>
         </div>
@@ -14,11 +14,10 @@
 
         <lightning-input label="Enter 1st Number" name="n1" value={fn} onchange={handleInputChange}></lightning-input>
         <lightning-input label="Enter 2nd Number" name="n2" value={sn} onchange={handleInputChange}></lightning-input>
-        <div class="alldata">Here is All the Data You Have Entered <span> {alldata}</span></div>
         <lightning-button variant="brand" onclick={handleSave} label="Save"></lightning-button>
-        <div slot="footer">
-            <span> <lightning-badge class="none" label={result}></lightning-badge></span>
-        </div>
+
+        <div class="alldata">Your Data <span> {alldata}</span></div>
+
 
     </lightning-card>
 </template>
