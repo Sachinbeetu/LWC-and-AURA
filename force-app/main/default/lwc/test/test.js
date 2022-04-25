@@ -1,5 +1,6 @@
+/* eslint-disable radix */
 import { LightningElement,api, track  } from 'lwc';
-import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+// import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 // importing Apex Class
 
@@ -27,7 +28,7 @@ handleSave()
         if(this.a <5)
         {
         this.a++;
-        this.newdata = ["Saved "+this.a+" Times. "+"Reset ="+ this.reset]
+        this.newdata = ["Saved "+this.a+" Times. Reset ="+ this.reset]
         }
         else{
             this.reset++;
