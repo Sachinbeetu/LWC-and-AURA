@@ -6,6 +6,12 @@
         <target>lightning__HomePage</target>
         <target>lightning__AppPage</target>
         <target>lightning__RecordPage</target>
-        
+        <target>lightning__RecordAction</target>
+        <!-- <target>lightning__RecordPage</target> -->
     </targets>
+<targetConfigs>
+            <targetConfig targets="lightning__RecordAction">
+            <actionType>ScreenAction</actionType>
+        </targetConfig>
+</targetConfigs>
 </LightningComponentBundle>
