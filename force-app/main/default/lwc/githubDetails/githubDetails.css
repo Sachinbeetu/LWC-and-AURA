@@ -1,0 +1,24 @@
+
+        #pro
+        {
+            background-color: yellow;
+            min-width: 200px;
+            border-radius: 20px;
+            min-height: 40px;
+            font-family:cursive;
+            font-size: 30px;
+        }
+        #image{
+            width: 440px;
+            height: 440px;
+            animation: noname 1s  0s 1;
+        }
+        @keyframes imggg {
+            0%{transform: scale(2);}
+            20%{transform: scale(1);}
+            40%{transform: scale(2);}
+            60%{transform: rotate(240deg);}
+            80%{transform: rotate(300deg);}
+            100%{transform: rotate(360deg);}
+        }
+  
